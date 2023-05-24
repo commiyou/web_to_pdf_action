@@ -23,6 +23,7 @@ const puppeteer = require('puppeteer');
 
             const browser = await puppeteer.launch(pptrOpts);
             const daPage = await browser.newPage();
+            daPage.setJavaScriptEnabled(false);
             await daPage.goto(webPageURL, {
                 waitUntil: "networkidle0",
             })
