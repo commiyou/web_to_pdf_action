@@ -19,7 +19,8 @@ const puppeteer = require('puppeteer');
       const pdfOpts = Object.assign({}, JSON.parse(core.getInput('pdfOptions')), pdfDefaults);
       const pptrOpts = {
         executablePath: googlePath,
-        args: ['--no-sandbox', '--headless', '--disable-gpu']
+        args: ['--no-sandbox', '--headless', '--disable-gpu'],
+        ignoreDefaultArgs: ["--enable-automation"]
       };
 
       const browser = await puppeteer.launch(pptrOpts);
