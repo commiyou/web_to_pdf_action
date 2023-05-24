@@ -1,4 +1,4 @@
-# Webpage to PDF action
+# Webpage to PDF action with javascript disabled
 
 A [GitHub Action](https://github.com/features/actions) to convert any webpage to a PDF document.
 
