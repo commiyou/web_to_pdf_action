@@ -1,6 +1,6 @@
-name: 'Webpage to PDF without javascript'
+name: 'Webpage to PDF with Chinese font support'
 description: 'Github Action to convert any webpage to a PDF document.'
-author: 'Noe Nieto <nnieto@noenieto.com'
+author: 'Noe Nieto <nnieto@noenieto.com>, Commi You <commiyou@gmail.com>'
 inputs: 
   webPageURL:
     description: 'URL of the page'
@@ -8,6 +8,10 @@ inputs:
   outputFile:
     description: 'Path to the resulting PDF file'
     required: true
+  disableJavaScript:
+    description: 'disable javascript or not'
+    required: false
+    default: "false"
   pdfOptions:
     description: |
       PDF options as described here:
